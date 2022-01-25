@@ -1,22 +1,25 @@
 """EX01 - Chardle  - A cute step toward Wordle."""
-__author__ = 730391348
+__author__ = "730391348"
 
 request: str = "Enter a 5-character word: "
-word_guess: str = "hello"
+word_guess: str = "hellos"
 request_again: str = "Enter a single character: "
-letter_guess: str = "h"
+letter_guess: str = "e"
 
 if len(word_guess) != 5:
     print(request + word_guess)
     print("Error: Word must contain 5 characters")
+    exit()
 else: 
     print(request + word_guess)
     print(request_again + letter_guess)
     if len(letter_guess) != 1:
         print("Error: Character must be a single character")
+        exit()
     else:
         if letter_guess == " ":
             print("Error: Character must be a single character")
+            exit()
         else: 
             if len(letter_guess) == 1:
                 print("Searching for " + letter_guess + " in " + word_guess)
@@ -44,13 +47,13 @@ else:
         print("No instances of " + sub + " found in " + word_guess)
     else: 
         if word_guess.count(sub, 0, 5) == 2:
-            print("2 instance of " + sub + " is found in " + word_guess) 
+            print("2 instances of " + sub + " is found in " + word_guess) 
         else: 
             if word_guess.count(sub, 0, 5) == 3:
-                print("3 instance of " + sub + " is found in " + word_guess)
+                print("3 instances of " + sub + " is found in " + word_guess)
             else: 
                 if word_guess.count(sub, 0, 5) == 4:
-                    print("4 instance of " + sub + " is found in " + word_guess)
+                    print("4 instances of " + sub + " is found in " + word_guess)
                 else:
                     if word_guess.count(sub, 0, 5) == 5:
-                        print("5 instance of " + sub + " is found in " + word_guess)
+                        print("5 instances of " + sub + " is found in " + word_guess)
