@@ -40,7 +40,7 @@ def input_guess(expected_length: int) -> str:
     """Asking a user for guess until it matches the expected length."""
     guess: str = input(f"Enter a {expected_length} character word: ")
     while len(guess) != expected_length:
-        guess = input(f"That was not {expected_length} letters! Try again: ")
+        guess = input(f"That wasn't {expected_length} chars! Try again: ")
     return guess
 
 
@@ -54,13 +54,12 @@ def main() -> None:
         # function call
         guess: str = input_guess(len(secret))
         print(emojified(guess, secret))
-        turn += 1
-        if guess == secret:
-            turn -= 1  
-            print(f"You won in {turn} /6 turns!")
+        if guess == secret: 
+            print(f"You won in {turn}/6 turns!")
             turn = 7
-        if turn == 7 and not guess == secret:
+        elif turn == 6:
             print("X/6 - Sorry, try again tomorrow!")
+        turn += 1
 
 
 if __name__ == "__main__":
