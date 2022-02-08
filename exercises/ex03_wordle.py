@@ -60,8 +60,3 @@ def main() -> None:
             print(f"You won in {turn} /6 turns!")
             turn = 7
     print("X/6 - Sorry, try again tomorrow!")
-
-
-if __name__ == "__main__":
-    main()
-    
