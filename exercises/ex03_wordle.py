@@ -59,8 +59,7 @@ def main() -> None:
             turn -= 1  
             print(f"You won in {turn} /6 turns!")
             turn = 7
-    else:
-        print("X/6 - Sorry, try again tomorrow!")
+    print("X/6 - Sorry, try again tomorrow!")
 
 
 if __name__ == "__main__":
