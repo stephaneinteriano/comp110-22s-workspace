@@ -5,11 +5,13 @@ __author__ = "730391348"
 word_guess: str = input("Enter a 5-character word: ")
 
 if len(word_guess) != 5:  
-    exit("Error: Word must contain 5 characters") 
+    print("Error: Word must contain 5 characters") 
+    exit
 else: 
     letter_guess: str = input("Enter a single character: ")
+    
+letter_guess: str = input("Enter a single character: ")
 sub = letter_guess
-
 if len(letter_guess) != 1:
     print("Error: Character must be a single character.")
     exit() 
