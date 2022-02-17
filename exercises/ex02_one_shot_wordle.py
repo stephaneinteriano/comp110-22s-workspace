@@ -2,6 +2,7 @@
 
 __author__ = "730391348"
 
+
 secret_word: str = "python"
 word_letters: int = len(secret_word) 
 WHITE_BOX: str = "\U00002B1C"
