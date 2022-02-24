@@ -18,23 +18,7 @@ while (i < 3):
 leo.end_fill()
 
 
-bob.penup()
-bob.goto(-150, -60)
-bob.pendown()
-
-bob.speed(60)
-
-bob.pencolor("pink")
-bob.begin_fill()
-bob.fillcolor(46, 120, 112)
-i: int = 0
-while (i < 3):
-    bob.forward(200)
-    bob.left(120)
-    i = i + 1
-bob.end_fill()
-
-bob.hideturtle()
+bob.left(100)
 
 
 done()
