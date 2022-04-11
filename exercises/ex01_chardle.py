@@ -6,7 +6,7 @@ word_guess: str = input("Enter a 5-character word: ")
 
 if len(word_guess) != 5:  
     print("Error: Word must contain 5 characters") 
-    exit
+    exit()
 else: 
     letter_guess: str = input("Enter a single character: ")
     
